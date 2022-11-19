@@ -1,4 +1,4 @@
-# CCNY Data Science Project: Air Quality in NYC
+# CSC 46000 Project: Air Quality in NYC
 By: Daniel Aguilar-Rodriguez, Anvinh Truong, Jia Cong Lin
 
 # Preliminary Analysis
