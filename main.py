@@ -4,6 +4,11 @@ import os
 import requests
 
 def download_data(csv_name):
+    """Download data from link matching key in dictionary and save in datasets folder
+
+    Args:
+        csv_name (str): The name of the csv.
+    """
     url_dict = {'air_quality': 'https://data.cityofnewyork.us/api/views/c3uy-2p5r/rows.csv', 
                 'mobility_global': 'https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv', 
                 'traffic_volume': 'https://data.cityofnewyork.us/api/views/7ym2-wayt/rows.csv'}
@@ -15,12 +20,28 @@ def download_data(csv_name):
         
         
 def csv_exists(csv_name):
+    """Check if the csv exists.
+
+    Args:
+        csv_name (str): The string of the name of the csv file.
+
+    Returns:
+        bool
+    """
     path = f'datasets/{csv_name}.csv'
     file_exists = os.path.exists(path)
     return file_exists
 
 
 def create_df(csv_name):
+    """Create a dataframe from a csv from a preset path.
+
+    Args:
+        csv_name (str): The string of the name of the csv file.
+
+    Returns:
+        df
+    """
     if not csv_exists(csv_name):
         download_data(csv_name)
     path = f'datasets/{csv_name}.csv'
@@ -29,12 +50,23 @@ def create_df(csv_name):
 
 
 def mkdir_if_not_exist():
+    """
+    Create dataset directory if it does not exist.
+    """
     directory = 'datasets'
     if not os.path.exists(f'{directory}/'):
         os.mkdir(directory)
 
         
 def create_all_df(csv_names):
+    """Create a list of DataFrames from an input list of csv file names.
+
+    Args:
+        csv_names (list): List of strings of csv file names.
+
+    Returns:
+        list: DataFrames
+    """
     mkdir_if_not_exist()
     df_list = []
     
