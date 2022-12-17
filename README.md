@@ -1,6 +1,9 @@
 # CSC 46000 Project: Air Quality in NYC
 By: Daniel Aguilar-Rodriguez, Anvinh Truong, Jia Cong Lin
 
+Project Proposal:\
+[Click Here](https://github.com/daniel-a-r/ccny_data_science_project/blob/main/Project%20Proposal.pdf)
+
 # Preliminary Analysis
 - Data Cleaning Code
   * Code for cleaning and processing your data. Include a data dictionary for your transformed dataset.
@@ -14,6 +17,7 @@ By: Daniel Aguilar-Rodriguez, Anvinh Truong, Jia Cong Lin
   * Describe the contributions that each group member made.
 
 # Blog Post & Presentation 
+[Blog Post](https://github.com/daniel-a-r/ccny_data_science_project/blob/main/Blog%20Air%20Quality%20in%20NYC.pdf)
 - Motivation
   * What is the problem you were trying to solve? Why is this an interesting problem? Assume that your audience knows nothing! Convince them that this is a problem worth solving. 
 - Data
